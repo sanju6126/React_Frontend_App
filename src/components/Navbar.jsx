@@ -10,16 +10,20 @@ function Navbar() {
 
   return (
     <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
-      <h1 className='w-full text-3xl font-bold text-[#00df9a]'>REACT.</h1>
+      <h1 className='cursor-pointer text-3xl font-bold text-[#00df9a]'>REACT.</h1>
       {/* //md:flex will be applied when the screen size is greater than that of Medium screen size other than that it will be hidden */}
-      <ul className='md:flex hidden' >    
-        {/* {nav ? setNav(!nav) : ""} */}
-        <li className='p-4'>Home</li>
-        <li className='p-4'>Company</li>
-        <li className='p-4'>Resources</li>
-        <li className='p-4'>About</li>
-        <li className='p-4'>Contact</li>
-      </ul>
+      <div>
+        <ul className='md:flex hidden gap-2' >    
+          {/* {nav ? setNav(!nav) : ""} */}
+          <li className='p-4 cursor-pointer '>Home</li>
+          <li className='p-4 cursor-pointer '>Resources</li>
+          <li className='p-4 cursor-pointer '>Company</li>
+          <li className='p-4 cursor-pointer '>Contact</li>
+        </ul>
+      </div>
+
+
+
       <div onClick={handleNav} className='block md:hidden ' >
           {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
       </div>

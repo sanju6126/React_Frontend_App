@@ -14,10 +14,10 @@ function Footer() {
             <h1 className='w-full text-3xl font-bold text-[#00df9a]'>REACT.</h1>
             <p className='py-4'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta eos praesentium voluptatibus deleniti, ipsa nesciunt mollitia aspernatur debitis dicta reiciendis rerum. Error voluptatum temporibus amet atque, numquam iusto! Asperiores, voluptatum?</p>
             <div className='flex justify-between md:w-[75%] my-6'>
-                <FaFacebookSquare/>
-                <FaInstagram/>
-                <FaTwitterSquare/>
-                <FaGithubSquare/>
+                <FaFacebookSquare className='cursor-pointer'/>
+                <FaInstagram className='cursor-pointer'/>
+                <FaTwitterSquare className='cursor-pointer'/>
+                <FaGithubSquare className='cursor-pointer'/>
                 {/* <FaDribbleSquare/> */}
             </div>
         </div>
